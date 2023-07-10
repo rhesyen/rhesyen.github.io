@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Skontaktuj się z nami!</h2>
+    <form action="https://formspree.io/f/xpzgzjrv" method="post">
+        <!-- method i name jest backendowy -->
+        <input type="text" name="Name" placeholder="Imię"><br>
+        <input type="text" name="Surname" placeholder="Nazwisko"><br>
+        <input type="email" name="Email" placeholder="Podaj adres e-mail"><br>
+        <input type="tel" name="Phone" placeholder="Podaj numer telefonu"><br>
+        <!-- select -->
+        <select name="City" id="">
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+        <label><input type="radio" name="Gender">Kobieta</label><br>
+        <label><input type="radio" name="Gender">Mężczyzna</label><br>
+        <label><input type="radio" name="Gender">Nie chcę podawać</label><br>
+        <label><input type="checkbox" name="Rodo" required>Wyrażam zgodę na przetwarzanie danych osobowych</label><br>
+        <!-- textarea -->
+        <label for="Message">Wiadomość:</label><br>
+        <textarea name="message" id="Message" style="margin: 1px; height: 50px; width: 153px;" maxlength="150">
+        </textarea><br>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+</html>
