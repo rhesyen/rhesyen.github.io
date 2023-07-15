@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=p, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Skontaktuj się z nami!</h2>
-    <form action="https://formspree.io/f/xpzgzjrv" method="post">
+    <!-- action="https://formspree.io/f/xpzgzjrv" -->
+    <form action="" method="post">
         <!-- method i name jest backendowy -->
-        <input type="text" name="Name" placeholder="Imię"><br>
-        <input type="text" name="Surname" placeholder="Nazwisko"><br>
-        <input type="email" name="Email" placeholder="Podaj adres e-mail"><br>
-        <input type="tel" name="Phone" placeholder="Podaj numer telefonu"><br>
+        <label for="Name">Imię:</label>
+        <input type="text" name="Name"><br>
+
+        <label for="Surname">Nazwisko:</label>
+        <input type="text" name="Surname"><br>
+
+        <label for="Email">E-mail:</label>
+        <input type="email" name="Email"><br>
+
+        <label for="Phone">Telefon:</label>
+        <input type="tel" name="Phone"><br>
+
         <!-- select -->
+        <label for="City">Wybierz miasto:</label>
         <select name="City">
             <option value="Kraków">Kraków</option>
             <option value="Warszawa">Warszawa</option>
             <option value="Gdańsk">Gdańsk</option>
         </select><br>
-        <label><input type="radio" name="Gender">Kobieta</label><br>
-        <label><input type="radio" name="Gender">Mężczyzna</label><br>
-        <label><input type="radio" name="Gender">Nie chcę podawać</label><br>
-        <label><input type="checkbox" name="Rodo" required>Wyrażam zgodę na przetwarzanie danych osobowych</label><br>
+
+        <label for="Gender">Wybierz płeć:</label>
+        <label for="male"><input type="radio" name="Gender" value="female">Kobieta</label><br>
+        <label for="female"><input type="radio" name="Gender" value="male">Mężczyzna</label><br>
+        <label for="none"><input type="radio" name="Gender" value="none">Nie chcę podawać</label><br>
+        <label for="Rodo"><input type="checkbox" name="Rodo" required>Wyrażam zgodę na przetwarzanie danych osobowych</label><br>
         <!-- textarea -->
-        <label for="Message">Wiadomość:</label><br>
-        <textarea name="message" id="Message" style="margin: 1px; height: 50px; width: 153px;" maxlength="150"></textarea><br>
+        <label for="Message">Wiadomość:</label>
+        <textarea name="message" id="Message" style="margin: 1px; height: 50px;"></textarea><br>
         <input type="submit" value="Wyślij">
     </form>
 </body>
