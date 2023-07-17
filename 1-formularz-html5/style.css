@@ -15,6 +15,11 @@ textarea {
     padding: 5px;
 }
 
+textarea {
+    height: 50px;
+    margin: 1px solid;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
