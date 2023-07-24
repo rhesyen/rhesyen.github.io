@@ -81,3 +81,29 @@ section {
 .main-header .main-header-content p span {
     color: #007bff;
 }
+
+/* Main menu styles */
+
+.main-menu {
+    background-color: #007bff;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-menu ul .menu-item a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: all .3s;
+}
+
+.main-menu ul .menu-item a:hover {
+    color: #007bff;
+    background-color: #fff;
+}
