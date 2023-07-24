@@ -68,7 +68,7 @@ section {
     text-align: center;
 }
 
-.main-header .main-header-content h1 {
+tyg {
     font-size: 4.2em;
     color: #007bff;
     text-transform: uppercase;
@@ -220,4 +220,50 @@ section {
     text-align: center;
     color: #777;
     padding: 30px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 100%;
+    }
+    .main-header .main-header-content h1 {
+        font-size: 3em;
+    }
+    .about .about-img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+    .contact input[type="text"],
+    .contact input[type="email"] {
+    flex-basis: 100%;
+    }
 }
