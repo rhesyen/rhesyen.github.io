@@ -35,6 +35,7 @@ section {
     border: 1px solid #007bff;
     padding: 14px 20px;
     transition: all .3s;
+    display: inline-block;
 }
 
 .btn:hover {
@@ -106,4 +107,21 @@ section {
 .main-menu ul .menu-item a:hover {
     color: #007bff;
     background-color: #fff;
+}
+
+/* About section styles */
+
+.about {
+    text-align: center;
+}
+
+.about .about-img {
+    border-radius: 50%;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 40px auto 30px auto; /* górny prawy dolny lewy */
+    color: #777;
+    line-height: 1.4;
 }
