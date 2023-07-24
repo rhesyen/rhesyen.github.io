@@ -212,3 +212,12 @@ section {
 .social-links .social-link:hover {
     color: #777;
 }
+
+/* Main footer styles */
+
+.main-footer {
+    background-color: #f2f1ed;
+    text-align: center;
+    color: #777;
+    padding: 30px;
+}
