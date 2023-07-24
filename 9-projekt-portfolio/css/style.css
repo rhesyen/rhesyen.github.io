@@ -68,7 +68,7 @@ section {
     text-align: center;
 }
 
-tyg {
+.main-header .main-header-content h1 {
     font-size: 4.2em;
     color: #007bff;
     text-transform: uppercase;
@@ -90,6 +90,14 @@ tyg {
 
 .main-menu {
     background-color: #007bff;
+}
+
+#drop-nav {
+    display: none;
+}
+
+label[for="drop-nav"] {
+    display: none;
 }
 
 .main-menu ul {
@@ -265,5 +273,29 @@ tyg {
     .contact input[type="text"],
     .contact input[type="email"] {
     flex-basis: 100%;
+    }
+
+    label[for="drop-nav"]{
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    .main-menu ul {
+        display: none;
+    }
+
+    #drop-nav:checked + ul {
+        display: block;
+    }
+
+    .main-menu ul .menu-item {
+        display: block;
+        text-align: right;
+        margin: 0;
     }
 }
