@@ -12,6 +12,41 @@ hr {
     border-bottom: 0;
 }
 
+section {
+    padding: 120px 0;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+.section-header h2 {
+    color: #333;
+    font-size: 1.9em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #007bff;
+    padding: 14px 20px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
 /* Header styles */
 
 .main-header {
