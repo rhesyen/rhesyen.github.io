@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    width: 70px;
+    border: 1px solid #007bff;
+    border-bottom: 0;
+}
+
+/* Header styles */
+
+.main-header {
+    height: 70vh;
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header .main-header-content {
+    text-align: center;
+}
+
+.main-header .main-header-content h1 {
+    font-size: 4.2em;
+    color: #007bff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.main-header .main-header-content p {
+    color: #333;
+    font-size: 1.3em;
+    margin: 0;
+    margin: 40px 0;
+}
+
+.main-header .main-header-content p span {
+    color: #007bff;
+}
