@@ -102,16 +102,25 @@ label[for="drop-nav"] {
 
 .main-menu ul {
     margin: 0;
-    padding: 10px 0;
+    padding: 14px 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+}
+
+::marker {
+    display: none;
 }
 
 .main-menu ul .menu-item a {
     color: #fff;
+    width: 200px;
     text-transform: uppercase;
     text-decoration: none;
     padding: 14px 20px;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     transition: all .3s;
 }
 
