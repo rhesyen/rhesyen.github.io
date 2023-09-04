@@ -1,20 +1,19 @@
 $(document).ready(function() {
-    // dwie metody uzycia funkcji 'getJSON' w jQuery
-    //pobieranie jedynie obiektów typu JSON
-    $.getJSON('https://jsonplaceholder.typicode.com/users/1', function(data) {
-        console.log(data);
-        console.log(data.name);
-        console.log(data.email);
-    });
-
-    $.getJSON('https://jsonplaceholder.typicode.com/users/1')
-        .done(function(data) {
+    //jQuery - $ajax() => https://api.jquery.com/jquery.ajax/
+    $.ajax({
+        url: 'https://jsonplaceholder.typicode.com/users/1',
+        statusCode: {
+            200: function() {
+                console.log('OK-dziala');
+            }
+        },
+        success: function(data) {
             console.log(data);
             console.log(data.name);
             console.log(data.email);
-        })
-        //obsluga bledow
-        .fail(function(error) {
-            console.log(error);
-        })
+        },
+        error: function(error) {
+            console.error(error);
+        }
+    });
 });
